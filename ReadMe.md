@@ -46,30 +46,23 @@ nodejs-demo-app/
 
 ## 🖼️ Screenshots
 
-### 🔹 Docker Hub Repository
+### 🔹 Docker Hub Repository  
+![Docker Hub Repository](./screenshots/dockerhub-image.jpg)
 
+### 🔹 Docker Container Running Locally  
+![Docker Container Running](./screenshots/docker-ps.jpg)
 
+### 🔹 AWS EC2 Instance Running the App  
+![EC2 Instance](./screenshots/ec2-instance.jpg)
 
-### 🔹 Docker Container Running Locally
+### 🔹 GitHub Actions Workflow Run  
+![GitHub Actions](./screenshots/github-actions.jpg)
 
+### 🔹 GitHub Secrets for CI/CD  
+![GitHub Secrets](./screenshots/github-secrets.jpg)
 
-
-### 🔹 AWS EC2 Instance Running the App
-
-
-
-### 🔹 GitHub Actions Workflow Run
-
-
-
-### 🔹 GitHub Secrets for CI/CD
-
-
-
-### 🔹 EC2 Security Group Settings
-
-
-
+### 🔹 EC2 Security Group Settings  
+![EC2 Security Group](./screenshots/security-group.jpg)
 ---
 
 ## ✈️ Run Locally
