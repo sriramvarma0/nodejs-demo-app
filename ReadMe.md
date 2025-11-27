@@ -172,6 +172,29 @@ docker run -d -p 80:3000 sriramvarma0/nodejs-demo-app
 
 Visit `http://<EC2_PUBLIC_IP>` in your browser.
 
+### 7. To Update Existing  Running Docker Image on EC2
+
+```# Stop any running container on port 80
+CID=$(docker ps -q --filter "publish=80")
+if [ ! -z "$CID" ]; then
+  echo "Stopping container on port 80..."
+  docker stop $CID
+  docker rm $CID
+fi
+
+# Remove old image (optional but safe)
+docker rmi -f sriramvarma0/nodejs-demo-app:latest
+
+# Pull updated image
+docker pull sriramvarma0/nodejs-demo-app:latest
+
+# Run fresh container
+docker run -d -p 80:3000 --name nodeapp sriramvarma0/nodejs-demo-app:latest
+
+echo "Application deployed successfully!"
+
+```
+
 ---
 
 ## 📅 Features
